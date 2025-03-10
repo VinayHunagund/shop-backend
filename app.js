@@ -12,7 +12,7 @@ const {Cart} = require('./model/Cart');
 
 
 //connecting to database
-mongoose.connect(process.env.MONOGDB_URL)
+mongoose.connect(process.env.MONGODB_URL)
 .then(()=>{
     console.log('Connected to database');
 }).catch((err)=>{
